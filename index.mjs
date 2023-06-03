@@ -1,12 +1,15 @@
 import process from 'process'
 
+(async () => {
+
+
 const toRgb = (hue, saturation, value) => {
     let d = 0.0166666666666666 * hue
-	let c = value * saturation
-	let x = c - c * Math.abs(d % 2.0 - 1.0)
-	let m = value - c
-	c += m
-	x += m
+    let c = value * saturation
+    let x = c - c * Math.abs(d % 2.0 - 1.0)
+    let m = value - c
+    c += m
+    x += m
     switch (d >>> 0) {
         case 0: return [c, x, m]
         case 1: return [x, c, m]
@@ -30,3 +33,6 @@ while (true) {
         break
 }
 console.log('\x1b[m')
+
+})()
+
