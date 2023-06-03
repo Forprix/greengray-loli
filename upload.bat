@@ -3,6 +3,6 @@
 @git fetch origin
 @git reset origin/main
 @git add --all
-git status
+@git status
 @git commit -am "hello"
-git push
+@git push
