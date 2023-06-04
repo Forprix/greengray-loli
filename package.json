@@ -1,9 +1,0 @@
-{
-  "name": "greengray-loli",
-  "version": "1.0.0",
-  "main": "index.mjs",
-  "scripts": {
-    "start": "node index.mjs"
-  },
-  "author": "Forprix"
-}
